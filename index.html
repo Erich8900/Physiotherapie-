@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Physiotherapy Clinic</title>
+  <style>
+    /* General styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0056b3;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #004494;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service-item {
+      background-color: #e1e5f2;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px;
+      width: 45%;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Your Physiotherapy Clinic</h1>
+    <p>Helping you move better, feel better, live better</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to [Your Clinic's Name], where we provide personalized physiotherapy to help you recover and strengthen your body. Our skilled therapists specialize in treatments for sports injuries, chronic pain, and mobility improvement.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-item">
+        <h3>Physical Therapy</h3>
+        <p>Comprehensive physical therapy sessions to restore mobility and reduce pain.</p>
+      </div>
+      <div class="service-item">
+        <h3>Sports Rehabilitation</h3>
+        <p>Targeted therapies for athletes to recover from injuries and enhance performance.</p>
+      </div>
+      <div class="service-item">
+        <h3>Massage Therapy</h3>
+        <p>Relax and rejuvenate with therapeutic massage to relieve muscle tension.</p>
+      </div>
+      <div class="service-item">
+        <h3>Post-Surgical Rehab</h3>
+        <p>Customized recovery plans for patients post-surgery to regain strength.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Fill out the form below or call us at (555) 123-4567</p>
+    <div class="contact-form">
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Your Physiotherapy Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
