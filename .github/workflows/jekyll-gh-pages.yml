@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Physiotherapy Clinic</title>
+  <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      background: url('https://example.com/header-image.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #007bff;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* About Section */
+    #about {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    #about img {
+      width: 300px;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    #about .content {
+      max-width: 600px;
+    }
+
+    /* Services Section */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Your Physiotherapy Clinic</h1>
+    <p>Your path to recovery begins here.</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="https://example.com/therapist.jpg" alt="Our Team">
+    <div class="content">
+      <h2 class="section-title">About Us</h2>
+      <p>Our clinic provides personalized physiotherapy treatments to improve mobility, relieve pain, and help you get back to your best self. With skilled therapists and a comfortable environment, we’re committed to your health and wellness.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service-item">
+        <img src="https://example.com/physical-therapy.jpg" alt="Physical Therapy">
+        <h3>Physical Therapy</h3>
+        <p>Personalized therapy to improve mobility and reduce pain.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://example.com/sports-rehab.jpg" alt="Sports Rehabilitation">
+        <h3>Sports Rehabilitation</h3>
+        <p>Recover from sports injuries and enhance performance.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://example.com/massage.jpg" alt="Massage Therapy">
+        <h3>Massage Therapy</h3>
+        <p>Therapeutic massage to relieve tension and promote relaxation.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://example.com/post-surgery.jpg" alt="Post-Surgical Rehab">
+        <h3>Post-Surgical Rehab</h3>
+        <p>Customized recovery plans to regain strength after surgery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Have questions or want to book an appointment? Fill out the form below or call us at (555) 123-4567.</p>
+    <div class="contact-form">
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Your Physiotherapy Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Physiotherapy Clinic</title>
+  <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      background: url('https://example.com/header-image.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #007bff;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* About Section */
+    #about {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    #about img {
+      width: 300px;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    #about .content {
+      max-width: 600px;
+    }
+
+    /* Services Section */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Your Physiotherapy Clinic</h1>
+    <p>Your path to recovery begins here.</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="https://example.com/therapist.jpg" alt="Our Team">
+    <div class="content">
+      <h2 class="section-title">About Us</h2>
+      <p>Our clinic provides personalized physiotherapy treatments to improve mobility, relieve pain, and help you get back to your best self. With skilled therapists and a comfortable environment, we’re committed to your health and wellness.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service-item">
+        <img src="https://example.com/physical-therapy.jpg" alt="Physical Therapy">
+        <h3>Physical Therapy</h3>
+        <p>Personalized therapy to improve mobility and reduce pain.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://example.com/sports-rehab.jpg" alt="Sports Rehabilitation">
+        <h3>Sports Rehabilitation</h3>
+        <p>Recover from sports injuries and enhance performance.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://example.com/massage.jpg" alt="Massage Therapy">
+        <h3>Massage Therapy</h3>
+        <p>Therapeutic massage to relieve tension and promote relaxation.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://example.com/post-surgery.jpg" alt="Post-Surgical Rehab">
+        <h3>Post-Surgical Rehab</h3>
+        <p>Customized recovery plans to regain strength after surgery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Have questions or want to book an appointment? Fill out the form below or call us at (555) 123-4567.</p>
+    <div class="contact-form">
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Your Physiotherapy Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
